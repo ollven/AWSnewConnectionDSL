@@ -29,6 +29,9 @@ changeProject(DslContext.projectId) {
             }
         }
         feature1.apply {
+            allowInSubProjects = true
+            allowInBuilds = true
+            param("awsSessionDuration", "")
         }
         val feature2 = find<S3Storage> {
             s3Storage {
