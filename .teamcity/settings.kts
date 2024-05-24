@@ -38,7 +38,7 @@ project {
             name = "Amazon Web Services (AWS)"
             regionName = "eu-west-1"
             credentialsType = static {
-                accessKeyId = "AKIA5JH2VERVJFGDHSDZ"
+                accessKeyId = "AKIA5JH2VERVJFGDHSDZ1111"
                 secretAccessKey = "credentialsJSON:5eb86222-6fe6-4757-99f0-d5b683d9dc2f"
                 stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
             }
