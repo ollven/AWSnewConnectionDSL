@@ -53,13 +53,5 @@ project {
                 awsRegionName = "eu-west-1"
             }
             connectionId = "AwsConnectionUsesSakura_AmazonWebServicesAws"
-        }
-        amazonEC2CloudProfile {
-            id = "amazon-4"
-            name = "test"
-            terminateIdleMinutes = 30
-            region = AmazonEC2CloudProfile.Regions.US_EAST_N_VIRGINIA
-            param("awsConnectionId", "AwsConnectionUsesSakura_AmazonWebServicesAws")
-        }
     }
 }
