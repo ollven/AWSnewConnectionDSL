@@ -40,8 +40,7 @@ project {
             credentialsType = static {
                 accessKeyId = "AKIA5JH2VERVJFGDHSDZ"
                 secretAccessKey = "credentialsJSON:5eb86222-6fe6-4757-99f0-d5b683d9dc2f"
-                useSessionCredentials = false
-                stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
+                stsEndpoint = "https://sts.amazonaws.com"
             }
             allowInSubProjects = true
             allowInBuilds = true
