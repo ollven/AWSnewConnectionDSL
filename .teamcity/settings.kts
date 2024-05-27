@@ -54,7 +54,8 @@ project {
                 awsConnectionId = "AwsConnectionUsesSakura_AmazonWebServicesAws"
                 stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
             }
-            allowInBuilds = false
+            allowInSubProjects = true
+            allowInBuilds = true
         }
         s3Storage {
             id = "PROJECT_EXT_9"
