@@ -35,7 +35,7 @@ project {
     features {
         awsConnection {
             id = "AwsConnectionUsesSakura_AmazonWebServicesAws"
-            name = "Amazon Web Services (AWS)"
+            name = "New Name"
             regionName = "eu-west-1"
             credentialsType = static {
                 accessKeyId = "AKIA5JH2VERVJFGDHSDZ"
