@@ -45,6 +45,17 @@ project {
             allowInSubProjects = true
             allowInBuilds = true
         }
+        awsConnection {
+            id = "AwsConnectionUsesSakura_AmazonWebServicesAws1"
+            name = "Amazon Web Services (AWS) (1)"
+            regionName = "eu-west-1"
+            credentialsType = iamRole {
+                roleArn = "arn:aws:iam::913206223978:role/olga_sventukh_for_iam_commection"
+                awsConnectionId = "AwsConnectionUsesSakura_AmazonWebServicesAws"
+                stsEndpoint = "https://sts.eu-west-1.amazonaws.com"
+            }
+            allowInBuilds = false
+        }
         s3Storage {
             id = "PROJECT_EXT_9"
             bucketName = "ollven-test"
