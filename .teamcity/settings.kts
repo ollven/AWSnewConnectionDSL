@@ -56,6 +56,12 @@ project {
             }
             allowInBuilds = false
         }
+        awsConnection {
+            id = "AwsConnectionUsesSakura_AmazonWebServicesAws_2"
+            name = "Amazon Web Services (AWS)"
+            credentialsType = default()
+            allowInBuilds = false
+        }
         s3Storage {
             id = "PROJECT_EXT_9"
             bucketName = "ollven-test"
