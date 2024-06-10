@@ -57,7 +57,7 @@ project {
         }
         awsConnection {
             id = "AwsConnectionUsesSakura_AmazonWebServicesAws_2"
-            name = "Amazon Web Services (AWS)"
+            name = "AWS default credentials"
             credentialsType = default()
             allowInBuilds = false
         }
