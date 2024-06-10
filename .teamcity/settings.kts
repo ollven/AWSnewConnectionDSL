@@ -1,6 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
 import jetbrains.buildServer.configs.kotlin.projectFeatures.awsConnection
-import jetbrains.buildServer.configs.kotlin.projectFeatures.s3Storage
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -61,15 +60,6 @@ project {
             name = "Amazon Web Services (AWS)"
             credentialsType = default()
             allowInBuilds = false
-        }
-        s3Storage {
-            id = "PROJECT_EXT_9"
-            bucketName = "ollven-test"
-            forceVirtualHostAddressing = true
-            awsEnvironment = default {
-                awsRegionName = "eu-west-1"
-            }
-            connectionId = "AwsConnectionUsesSakura_AmazonWebServicesAws"
         }
     }
 }
