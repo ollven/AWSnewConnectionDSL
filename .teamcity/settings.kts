@@ -46,7 +46,7 @@ project {
         }
         awsConnection {
             id = "AwsConnectionUsesSakura_AmazonWebServicesAws1"
-            name = "Amazon Web Services (AWS) (1)"
+            name = "AWS IAM role"
             regionName = "eu-west-1"
             credentialsType = iamRole {
                 roleArn = "arn:aws:iam::913206223978:role/olga_sventukh_for_iam_commection"
