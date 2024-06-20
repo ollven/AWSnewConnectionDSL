@@ -29,7 +29,6 @@ project {
 
     params {
         param("teamcity.internal.aws.connection.reactUiEnabled", "true")
-        param("teamcity.internal.aws.ec2.awsConnectionsEnabled", "true")
     }
 
     features {
