@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.*
+import jetbrains.buildServer.configs.kotlin.amazonEC2CloudProfile
 import jetbrains.buildServer.configs.kotlin.projectFeatures.awsConnection
 
 /*
@@ -60,6 +61,13 @@ project {
             name = "AWS default credentials"
             credentialsType = default()
             allowInBuilds = false
+        }
+        amazonEC2CloudProfile {
+            id = "amazon-5"
+            name = "nnn"
+            terminateIdleMinutes = 30
+            region = AmazonEC2CloudProfile.Regions.US_EAST_N_VIRGINIA
+            param("awsConnectionId", "AwsConnectionUsesSakura_AmazonWebServicesAws")
         }
     }
 }
