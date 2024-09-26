@@ -24,7 +24,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2024.03"
+version = "2024.07"
 
 project {
 
@@ -66,7 +66,7 @@ project {
             id = "amazon-5"
             name = "nnn"
             terminateIdleMinutes = 30
-            region = AmazonEC2CloudProfile.Regions.US_EAST_N_VIRGINIA
+            region = AmazonEC2CloudProfile.Regions.EU_WEST_DUBLIN
             param("awsConnectionId", "AwsConnectionUsesSakura_AmazonWebServicesAws")
         }
     }
