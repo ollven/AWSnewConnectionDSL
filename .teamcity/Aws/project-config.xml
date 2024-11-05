@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="3e38dfb0-82bf-49cb-bfcd-57cb8491ed28" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>AWS connection uses Sakura</name>
+  <parameters>
+    <param name="teamcity.internal.aws.connection.reactUiEnabled" value="true" />
+  </parameters>
+  <project-extensions>
+    <extension id="Aws_AmazonWebServicesAws1" type="OAuthProvider">
+      <parameters>
+        <param name="awsAccessKeyId" value="AKIA5JH2VERVJFGDHSDZ" />
+        <param name="awsAllowedInBuilds" value="true" />
+        <param name="awsAllowedInSubProjects" value="false" />
+        <param name="awsCredentialsType" value="awsAccessKeys" />
+        <param name="awsIamRoleSessionName" value="TeamCity-session" />
+        <param name="awsRegionName" value="eu-west-1" />
+        <param name="awsSessionCredentials" value="true" />
+        <param name="awsStsEndpoint" value="https://sts.eu-west-1.amazonaws.com" />
+        <param name="displayName" value="Amazon Web Services (AWS) (1)" />
+        <param name="providerType" value="AWS" />
+        <param name="secure:awsSecretAccessKey" value="credentialsJSON:5eb86222-6fe6-4757-99f0-d5b683d9dc2f" />
+      </parameters>
+    </extension>
+    <extension id="Aws_AmazonWebServicesAws2" type="OAuthProvider">
+      <parameters>
+        <param name="awsAllowedInBuilds" value="false" />
+        <param name="awsAllowedInSubProjects" value="false" />
+        <param name="awsConnectionId" value="Aws_AmazonWebServicesAws1" />
+        <param name="awsCredentialsType" value="awsAssumeIamRole" />
+        <param name="awsIamRoleArn" value="arn:aws:iam::913206223978:role/olga_sventukh_for_iam_commection" />
+        <param name="awsIamRoleSessionName" value="TeamCity-session" />
+        <param name="awsRegionName" value="us-east-1" />
+        <param name="awsSessionCredentials" value="true" />
+        <param name="awsStsEndpoint" value="https://sts.us-east-1.amazonaws.com" />
+        <param name="displayName" value="Amazon Web Services (AWS) (2)" />
+        <param name="providerType" value="AWS" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_19" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="PREFER_VCS" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="ignoreChangesInDependenciesAndVcsSettings" value="false" />
+        <param name="rootId" value="Aws_HttpsGithubComOllvenAWSnewConnectionDS" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+
