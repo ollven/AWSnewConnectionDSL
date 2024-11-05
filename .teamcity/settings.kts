@@ -30,10 +30,6 @@ project {
 
     buildType(Build)
 
-    params {
-        param("teamcity.internal.aws.connection.reactUiEnabled", "true")
-    }
-
     features {
         awsConnection {
             id = "Aws_AmazonWebServicesAws1"
